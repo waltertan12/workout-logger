@@ -1,10 +1,11 @@
 const React = require('react');
+const Dashboard = require ('./dashboard');
 
 var App = React.createClass({
   render: () => {
     return (
-      <div className='container'>
-        <h1>Hello, world!</h1>
+      <div>
+        <Dashboard />
       </div>
     );
   }
