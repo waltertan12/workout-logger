@@ -1,7 +1,7 @@
 {
   "name": "Workout-Logger",
   "version": "1.0.0",
-  "description": "== README",
+  "description": "Log your gains (or reverse gains...)",
   "main": "webpack.config.js",
   "directories": {
     "test": "test"
@@ -9,8 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["fitness", "tracker"],
+  "author": "Waleter Tan and Migey Alavarano",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.4.0",
