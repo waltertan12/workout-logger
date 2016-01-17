@@ -5,7 +5,11 @@ var root = 'content';
 
 var Test = React.createClass({
   render: () => {
-    return <h1>Hello, world!</h1>;
+    return (
+      <div className='container'>
+        <h1>Hello, world!</h1>
+      </div>
+    );
   }
 });
 
