@@ -15,13 +15,21 @@ Simple app to log workouts! Built using Ruby on Rails and React / Redux.
 - [Sass](http://sass-lang.com/)
 - Plotly or D3
 
-### Key Features
+### Features
+##### Key Features
 - [ ] Sign in and sign up
 - [ ] Add exercises
 - [ ] Log workouts
 
-### Additional Features
+##### Additional Features
 - [ ] Graph workouts
 - [ ] Follow users
 - [ ] Like workouts
 - [ ] Tag workouts and exercises e.g. 'Olympic Lifting' or 'Bodybuilding'
+
+### Setup
+1. Run `bundle install`
+2. Run `npm install`
+3. Run `webpack`
+4. Run `rails s`
+5. Go to `localhost:3000` on the browser
