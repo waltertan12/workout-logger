@@ -1,6 +1,7 @@
 var Typed = function (id, phrases) {
   this.el = document.getElementById(id);
   this.phrases = phrases;
+  this.run = false;
 };
 
 Typed.prototype.typePhrase = function (phrase, backspace) {   
@@ -62,6 +63,8 @@ Typed.prototype.removePhrase = function (phrase, typeCallback) {
 };
 
 Typed.prototype.typePhrases = function () {
+  this.run = true;
+  
   var len = this.phrases.length,
       phraseIndex = -1,
       backspace, typeCallback;
@@ -79,7 +82,6 @@ Typed.prototype.typePhrases = function () {
 
 
       if (phraseIndex !== len - 1) {
-        console.log(this.phrases[phraseIndex]);
         backspace = () => {
           setTimeout(() => {
             this.removePhrase(this.phrases[phraseIndex], typeCallback);
