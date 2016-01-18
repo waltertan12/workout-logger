@@ -1,10 +1,13 @@
-var Typed = function (id, phrases) {
+/* globals module */
+'use strict';
+
+var Typing = function (id, phrases) {
   this.el = document.getElementById(id);
   this.phrases = phrases;
   this.run = false;
 };
 
-Typed.prototype.typePhrase = function (phrase, backspace) {   
+Typing.prototype.typePhrase = function (phrase, backspace) {   
     var len = phrase.length,
         timeOut,
         letter = 0;
@@ -28,12 +31,12 @@ Typed.prototype.typePhrase = function (phrase, backspace) {
           }
 
       }, humanize);
-    }
+    };
 
     _typePhrase();
 };
 
-Typed.prototype.removePhrase = function (phrase, typeCallback) {
+Typing.prototype.removePhrase = function (phrase, typeCallback) {
   var len = phrase.length,
       timeOut,
       letter = len;
@@ -49,7 +52,7 @@ Typed.prototype.removePhrase = function (phrase, typeCallback) {
         this.el.textContent = type + '|';
         _removePhrase();
 
-        if (letter == 0) {
+        if (letter === 0) {
             // remove the '|'
             this.el.textContent = '';
             typeCallback();
@@ -57,14 +60,14 @@ Typed.prototype.removePhrase = function (phrase, typeCallback) {
         }
 
     }, humanize);
-  }
+  };
 
   _removePhrase();
 };
 
-Typed.prototype.typePhrases = function () {
+Typing.prototype.typePhrases = function () {
   this.run = true;
-  
+
   var len = this.phrases.length,
       phraseIndex = -1,
       backspace, typeCallback;
@@ -77,15 +80,14 @@ Typed.prototype.typePhrases = function () {
       typeCallback = () => {
         setTimeout(() => {
           _typePhrases();
-        }, 500)
+        }, 500);
       };
-
 
       if (phraseIndex !== len - 1) {
         backspace = () => {
           setTimeout(() => {
             this.removePhrase(this.phrases[phraseIndex], typeCallback);
-          }, 500)
+          }, 500);
         };
       } else {
         backspace = null;
@@ -98,4 +100,4 @@ Typed.prototype.typePhrases = function () {
   _typePhrases();
 };
 
-module.exports = Typed;
+module.exports = Typing;

@@ -1,6 +1,6 @@
 const React = require('react');
 const Link = require('react-router').Link;
-const Typed = require('../utils/typed.js');
+const Typing = require('../utils/typing');
 
 var LandingPage = React.createClass({
   getInitialState: function () {
@@ -19,9 +19,9 @@ var LandingPage = React.createClass({
     );
   },
   initAnimation: function () {
-    if (this.inView('typed') && !this.state.t) {
+    if (this.inView('typing') && !this.state.t) {
       this.setState({
-        t: new Typed('typed', ['...?', 'yolked.', 'fast.', 'strong.'])
+        t: new Typing('typing', ['...?', 'yolked.', 'fast.', 'strong.'])
       });
       this.state.t.typePhrases();
     }
@@ -39,7 +39,7 @@ var LandingPage = React.createClass({
           <h1>You&#39;re weak, bro...</h1>
         </div>
         <div className='enter'>
-          <h1>Get <span id='typed'>...</span></h1>
+          <h1>Get <span id='typing'>...</span></h1>
           <div className='center'>
             <Link to='/sign_in' className='btn btn-default transition'>
               Sign In
