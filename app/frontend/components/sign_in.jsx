@@ -21,13 +21,13 @@ var SignIn = React.createClass({
   },
   render: function () {
     return (
-      <div className='col-md-6 col-md-offset-3'>
+      <div className='col-md-4 col-md-offset-4'>
         <h1>Sign In</h1>
         <form>
           <label>Email</label><br/>
           <input type='text' value={this.state.email} 
                              onChange={this.updateEmail} 
-                             placeholder='huge.jacked.man@hugh.jackman.chickenlegs'
+                             placeholder='huge.jacked.man@hugh.jackman'
                              className='form-control'/>
           <br/><br/>
           <label>Password</label><br/>
@@ -36,8 +36,9 @@ var SignIn = React.createClass({
                              placeholder='imweakbro'
                              className='form-control'/>
           <br/><br/>
-          <input type='submit' value='Sign In' className='btn btn-default'
-                             onClick={this.signin}/>
+          <input type='submit' value='Sign In' 
+                               className='btn btn-default transition'
+                               onClick={this.signin}/>
         </form>
       </div>
     );

@@ -21,7 +21,7 @@ var LandingPage = React.createClass({
   initAnimation: function () {
     if (this.inView('typed') && !this.state.t) {
       this.setState({
-        t: new Typed('typed', ['...', 'yolked', 'fast', 'strong'])
+        t: new Typed('typed', ['...?', 'yolked.', 'fast.', 'strong.'])
       });
       this.state.t.typePhrases();
     }
