@@ -1,7 +1,8 @@
 const React = require('react');
+const Link = require('react-router').Link;
 
-var Dashboard = React.createClass({
-  render: () => {
+var LandingPage = React.createClass({
+  render: function () {
     return (
       <div className='landing-page'>
         <div className='intro'>
@@ -10,7 +11,8 @@ var Dashboard = React.createClass({
         <div className='enter'>
           <h1>Get Strong</h1>
           <div className='center'>
-            <button className='btn btn-default'>Login</button>
+            <Link to='/sign_in' className='btn btn-default'>Sign In</Link>
+            <a className='btn btn-default'>Sign Up</a>
           </div>
         </div>
       </div>
@@ -18,4 +20,4 @@ var Dashboard = React.createClass({
   }
 })
 
-module.exports = Dashboard;
+module.exports = LandingPage;

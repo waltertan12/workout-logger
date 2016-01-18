@@ -1,11 +1,10 @@
 const React = require('react');
-const Dashboard = require ('./dashboard');
 
 var App = React.createClass({
-  render: () => {
+  render: function () {
     return (
       <div>
-        <Dashboard />
+        { this.props.children }
       </div>
     );
   }
