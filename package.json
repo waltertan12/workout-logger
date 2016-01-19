@@ -1,7 +1,7 @@
 {
   "name": "Workout-Logger",
   "version": "1.0.0",
-  "description": "Log your gains (or reverse gains...)",
+  "description": "Log your workouts",
   "main": "webpack.config.js",
   "directories": {
     "test": "test"
