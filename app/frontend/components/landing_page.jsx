@@ -26,6 +26,11 @@ var LandingPage = React.createClass({
       this.state.t.typePhrases();
     }
   },
+  enterModal: function (e) {
+    e.preventDefault();
+    // Temporary
+    window.location.hash = '#/sign_in';
+  },
   componentDidMount: function () {
     document.addEventListener('scroll', this.initAnimation);
   },
@@ -41,12 +46,10 @@ var LandingPage = React.createClass({
         <div className='enter'>
           <h1>Get <span id='typing'>...</span></h1>
           <div className='center'>
-            <Link to='/sign_in' className='button button-blue transition'>
-              Sign In
-            </Link>&nbsp;
-            <a className='button button-blue transition'>
-              Sign Up
-            </a>
+            <button onClick={this.enterModal} 
+                    className='button button-blue transition'>
+              Enter
+            </button>
           </div>
         </div>
       </div>
