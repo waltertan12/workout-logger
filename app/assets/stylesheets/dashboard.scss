@@ -1,3 +1,5 @@
+@import "./mixins/*";
+
 .landing-page {
   h1 {
     font-size: 27vmin;
@@ -7,12 +9,12 @@
   }
   .intro {
     height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: $ui-color-dark;
+    color: $ui-color-light;
   }
   .enter {
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: $ui-color-light;
+    color: $ui-color-dark;
   }
 }

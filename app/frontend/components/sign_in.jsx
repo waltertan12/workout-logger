@@ -19,6 +19,10 @@ var SignIn = React.createClass({
     e.preventDefault();
     console.log('signing in');
   },
+  cancel: function (e) {
+    e.preventDefault();
+    console.log('cancel');
+  },
   render: function () {
     return (
       <div className='col-md-4 col-md-offset-4'>
@@ -28,17 +32,21 @@ var SignIn = React.createClass({
           <input type='text' value={this.state.email} 
                              onChange={this.updateEmail} 
                              placeholder='huge.jacked.man@hugh.jackman'
-                             className='form-control'/>
+                             className='session-input'/>
           <br/><br/>
           <label>Password</label><br/>
           <input type='password' value={this.state.password} 
                              onChange={this.updatePassword} 
                              placeholder='imweakbro'
-                             className='form-control'/>
+                             className='session-input'/>
           <br/><br/>
           <input type='submit' value='Sign In' 
-                               className='btn btn-default transition'
+                               className='btn btn-blue transition'
                                onClick={this.signin}/>
+          &nbsp;
+          <input type='submit' value='Cancel' 
+                               className='btn btn-red transition'
+                               onClick={this.cancel}/>
         </form>
       </div>
     );

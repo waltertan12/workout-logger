@@ -41,10 +41,10 @@ var LandingPage = React.createClass({
         <div className='enter'>
           <h1>Get <span id='typing'>...</span></h1>
           <div className='center'>
-            <Link to='/sign_in' className='btn btn-default transition'>
+            <Link to='/sign_in' className='btn btn-blue transition'>
               Sign In
             </Link>&nbsp;
-            <a className='btn btn-default transition'>
+            <a className='btn btn-blue transition'>
               Sign Up
             </a>
           </div>
