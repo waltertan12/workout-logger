@@ -22,6 +22,10 @@ Simple app to log workouts! Built using Ruby on Rails and React / Redux.
 - [ ] Log workouts
 
 ##### Additional Features
+- [ ] Log meals
+- [ ] Log weight
+- [ ] Log injury
+- [ ] Plan workouts
 - [ ] Graph workouts
 - [ ] Follow users
 - [ ] Like workouts
