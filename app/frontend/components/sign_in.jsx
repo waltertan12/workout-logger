@@ -41,11 +41,11 @@ var SignIn = React.createClass({
                              className='session-input'/>
           <br/><br/>
           <input type='submit' value='Sign In' 
-                               className='btn btn-blue transition'
+                               className='button button-blue transition'
                                onClick={this.signin}/>
           &nbsp;
           <input type='submit' value='Cancel' 
-                               className='btn btn-red transition'
+                               className='button button-red transition'
                                onClick={this.cancel}/>
         </form>
       </div>

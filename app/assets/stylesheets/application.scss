@@ -40,7 +40,7 @@ div.center {
   }
 }
 
-.btn {
+.button {
     color: $ui-color-dark;
     display: inline-block;
     margin-bottom: 0;
@@ -66,7 +66,7 @@ div.center {
     }
 }
 
-.btn-blue {
+.button-blue {
   &:hover {
     color: $ui-color-light;
     background-color: $accent-blue-light;
@@ -74,7 +74,7 @@ div.center {
   }
 }
 
-.btn-red {
+.button-red {
   &:hover {
     color: $ui-color-light;
     background-color: $accent-red-light;
