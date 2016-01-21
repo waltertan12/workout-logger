@@ -1,11 +1,28 @@
 const React = require('react');
+const ModalActions = require('../actions/modal_actions');
+const Store = require('../stores/redux_store');
 
-var SignIn = React.createClass({
+var EnterModal = React.createClass({
   getInitialState: function () {
     return ({
       email: '',
-      password: ''
+      password: '',
+      class: 'hide-enter-modal'
     });
+  },
+  componentWillMount: function () {
+    Store.subscribe(this.change);
+  },
+  componentWillUnmount: function () {
+    // Unsubscribe change from store
+  },
+  hide: function () {
+    Store.dispatch(ModalActions.hideEnterModal());
+  },
+  change: function () {
+    this.setState({
+      class: Store.getState().get('ENTER_MODAL_STATUS')
+    })
   },
   updateEmail: function (e) {
     e.preventDefault();
@@ -18,14 +35,16 @@ var SignIn = React.createClass({
   signin: function (e) {
     e.preventDefault();
     console.log('signing in');
+    this.hide();
   },
   cancel: function (e) {
     e.preventDefault();
     console.log('cancel');
+    this.hide();
   },
   render: function () {
     return (
-      <div className='col-md-4 col-md-offset-4'>
+      <div className={'enter-modal ' + this.state.class}>
         <h1>Sign In</h1>
         <form>
           <label>Email</label><br/>
@@ -53,4 +72,4 @@ var SignIn = React.createClass({
   }
 });
 
-module.exports = SignIn;
+module.exports = EnterModal;

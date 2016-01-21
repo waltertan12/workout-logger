@@ -1,6 +1,8 @@
 const React = require('react');
 const Link = require('react-router').Link;
 const Typing = require('../utils/typing');
+const Store = require('../stores/redux_store');
+const ModalActions = require('../actions/modal_actions');
 
 var LandingPage = React.createClass({
   getInitialState: function () {
@@ -28,8 +30,7 @@ var LandingPage = React.createClass({
   },
   enterModal: function (e) {
     e.preventDefault();
-    // Temporary
-    window.location.hash = '#/sign_in';
+    Store.dispatch(ModalActions.showEnterModal());
   },
   componentDidMount: function () {
     document.addEventListener('scroll', this.initAnimation);

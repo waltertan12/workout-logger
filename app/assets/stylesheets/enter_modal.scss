@@ -1,0 +1,22 @@
+@import "./mixins/*";
+
+.enter-modal {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  width: 400px;
+  padding: 20px;
+  z-index: 100;
+  margin-left: -200px;
+  transition-duration: 300ms;
+  background-color: #fff;
+  border: 1px solid $ui-color-medium;
+}
+
+.show-enter-modal {
+  margin-top: 0%;
+}
+
+.hide-enter-modal {
+  margin-top: -70%;
+}
