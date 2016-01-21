@@ -7,7 +7,7 @@ const IndexRedirect = require('react-router').IndexRedirect;
 const browserHistory = require('history').browserHistory;
 
 // Components
-const App = require('./components/app');
+const App = require('./containers/app');
 const LandingPage = require('./components/landing_page');
 
 var root = 'content';
