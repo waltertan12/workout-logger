@@ -1,4 +1,4 @@
-const Constants = require('../constants/constants.js');
+const Constants = require('../constants/constants');
 
 const ModalActions = {
   showEnterModal: () => {
