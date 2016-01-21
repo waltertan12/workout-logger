@@ -1,6 +1,7 @@
 const React = require('react');
 const ModalActions = require('../actions/modal_actions');
 const Store = require('../stores/redux_store');
+const Constants = require('../constants/constants');
 
 var EnterModal = React.createClass({
   getInitialState: function () {
@@ -21,7 +22,7 @@ var EnterModal = React.createClass({
   },
   change: function () {
     this.setState({
-      class: Store.getState().get('ENTER_MODAL_STATUS')
+      class: Store.getState().get(Constants.ENTER_MODAL_STATUS)
     })
   },
   updateEmail: function (e) {

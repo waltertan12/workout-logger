@@ -1,9 +1,11 @@
+const Constants = require('../constants/constants.js');
+
 const ModalActions = {
   showEnterModal: () => {
-    return { type: 'SHOW_ENTER_MODAL' };
+    return { type: Constants.SHOW_ENTER_MODAL };
   },
   hideEnterModal: () => {
-    return { type: 'HIDE_ENTER_MODAL' };
+    return { type: Constants.HIDE_ENTER_MODAL };
   }
 };
 

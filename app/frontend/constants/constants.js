@@ -1,0 +1,7 @@
+const Constants = {
+  SHOW_ENTER_MODAL: 'HIDE_ENTER_MODAL',
+  HIDE_ENTER_MODAL: 'SHOW_ENTER_MODAL',
+  ENTER_MODAL_STATUS: 'ENTER_MODAL_STATUS'
+};
+
+module.exports = Constants;
