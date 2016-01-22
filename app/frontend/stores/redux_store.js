@@ -13,7 +13,6 @@ const reducer = require('../reducers/reducer');
       email: ''
     }
   }
-
 */
 
 const Store = createStore(reducer);
