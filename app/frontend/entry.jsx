@@ -5,6 +5,7 @@ const Route = require('react-router').Route;
 const IndexRoute = require('react-router').IndexRoute;
 const IndexRedirect = require('react-router').IndexRedirect;
 const browserHistory = require('history').browserHistory;
+const $ = require('./utils/zepto.min');
 
 // Components
 const App = require('./containers/app');
