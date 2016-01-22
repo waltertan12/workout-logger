@@ -3,8 +3,8 @@ class Api::SessionsController < ApplicationController
     @user = User.find_by_credentials(params[:user][:email], 
                                      params[:user][:password])
     if @user
-      log_in_user!(@user)
-      render :show
+      login_user!(@user)
+      render json: @user
     else
       render json: ['Password and/or email is incorrect'], status: 422
     end

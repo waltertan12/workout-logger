@@ -22,4 +22,6 @@ var routes = (
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(routes, document.getElementById(root));
+  $.ajaxSettings.headers || ($.ajaxSettings.headers = {});
+  $.ajaxSettings.headers['X-CSRF-TOKEN'] = $("meta[name='csrf-token']").attr('content');
 }, false);
