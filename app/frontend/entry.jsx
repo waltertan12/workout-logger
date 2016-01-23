@@ -10,6 +10,7 @@ const $ = require('./utils/zepto.min');
 // Components
 const App = require('./containers/app');
 const LandingPage = require('./components/landing_page');
+const Dashboard = require('./containers/dashboard');
 
 var root = 'content';
 
@@ -17,6 +18,8 @@ var routes = (
   <Router history={ browserHistory }>
     <Route path='/' component={ App } >
       <IndexRoute component={ LandingPage } />
+
+      <Route path='/dashboard' component={ Dashboard } />
     </Route>
   </Router>
 );

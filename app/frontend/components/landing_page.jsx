@@ -3,6 +3,7 @@ const Link = require('react-router').Link;
 const Typing = require('../utils/typing');
 const Store = require('../stores/redux_store');
 const ModalActions = require('../actions/modal_actions');
+const EnterModal = require('../components/enter_modal');
 
 var LandingPage = React.createClass({
   getInitialState: function () {
@@ -40,17 +41,20 @@ var LandingPage = React.createClass({
   },
   render: function () {
     return (
-      <div className='landing-page'>
-        <div className='intro'>
-          <h1>You&#39;re weak, bro...</h1>
-        </div>
-        <div className='enter'>
-          <h1>Get <span id='typing'>...</span></h1>
-          <div className='center'>
-            <button onClick={this.enterModal} 
-                    className='button button-blue transition'>
-              Enter
-            </button>
+      <div>
+        <EnterModal />
+        <div className='landing-page'>
+          <div className='intro'>
+            <h1>You&#39;re weak, bro...</h1>
+          </div>
+          <div className='enter'>
+            <h1>Get <span id='typing'>...</span></h1>
+            <div className='center'>
+              <button onClick={this.enterModal} 
+                      className='button button-blue transition'>
+                Enter
+              </button>
+            </div>
           </div>
         </div>
       </div>

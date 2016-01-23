@@ -8,9 +8,9 @@ module.exports = {
     path: path.join(__dirname, 'app', 'assets', 'javascripts'),
     filename: 'bundle.js'
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
-  ],
+  // plugins: [
+  //   new webpack.optimize.UglifyJsPlugin({minimize: true})
+  // ],
   devtool: 'source-maps',
   resolve: {
     extensions: ['', '.js', '.jsx']
