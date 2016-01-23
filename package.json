@@ -9,7 +9,10 @@
   "scripts": {
     "postinstall": "./node_modules/.bin/webpack"
   },
-  "keywords": ["fitness", "tracker"],
+  "keywords": [
+    "fitness",
+    "tracker"
+  ],
   "author": "Waleter Tan and Migey Alavarano",
   "license": "ISC",
   "dependencies": {
@@ -23,6 +26,7 @@
     "react-dom": "^0.14.6",
     "react-router": "^1.0.3",
     "redux": "^3.0.5",
+    "redux-thunk": "^1.0.3",
     "webpack": "^1.12.11"
   }
 }
