@@ -1,4 +1,4 @@
-# Workout Logger
+# [Workout Logger](http://youreweakbro.herokuapp.com)
 
 Simple app to log workouts! Built using Ruby on Rails and React / Redux.
 
