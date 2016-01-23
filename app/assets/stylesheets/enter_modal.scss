@@ -28,8 +28,13 @@
 
 .show-enter-modal {
   margin-top: 0%;
+  
+  transition-duration: 300ms;
 }
 
 .hide-enter-modal {
-  margin-top: -70%;
+  margin-top: -10%;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 300ms;
 }
