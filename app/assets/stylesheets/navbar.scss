@@ -1,0 +1,8 @@
+@import "./mixins/*";
+
+.navbar-custom {
+  color: $ui-color-light; 
+  background-color: $ui-color-medium;
+  font-weight: bold;
+  margin-bottom: 0;
+}
