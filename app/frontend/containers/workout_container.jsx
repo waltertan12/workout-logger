@@ -5,6 +5,7 @@ const WorkoutForm = require('../components/workouts/workout_form');
 
 const WorkoutContainer = React.createClass({
   render: function () {
+    document.title = 'Log | YouAreWeakApp';
     return (
       <div className='container'>
         <div className='row'>

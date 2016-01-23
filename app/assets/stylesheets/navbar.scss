@@ -1,5 +1,9 @@
 @import "./mixins/*";
 
+nav.navbar.navbar-custom.navbar-static-top {
+  margin-bottom: 0;
+}
+
 .navbar-custom {
   color: $ui-color-light; 
   background-color: $ui-color-medium;

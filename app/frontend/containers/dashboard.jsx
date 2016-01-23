@@ -3,7 +3,7 @@ const Navbar = require('../components/navbar');
 
 const Dashboard = React.createClass({
   render: function () {
-    document.title = 'Dashboard | ' + document.title;
+    document.title = 'Dashboard | YouAreWeakApp';
     return (
       <div>
         <div className='container'>
