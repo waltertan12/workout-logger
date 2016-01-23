@@ -1,7 +1,7 @@
 const React = require('react');
-const ModalActions = require('../actions/modal_actions');
-const Store = require('../stores/redux_store');
-const Constants = require('../constants/constants');
+const ModalActions = require('../../actions/modal_actions');
+const Store = require('../../stores/redux_store');
+const Constants = require('../../constants/constants');
 
 var EnterModal = React.createClass({
   getInitialState: function () {

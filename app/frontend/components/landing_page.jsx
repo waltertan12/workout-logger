@@ -3,7 +3,7 @@ const Link = require('react-router').Link;
 const Typing = require('../utils/typing');
 const Store = require('../stores/redux_store');
 const ModalActions = require('../actions/modal_actions');
-const EnterModal = require('../components/enter_modal');
+const EnterModal = require('../components/modals/enter_modal');
 
 var LandingPage = React.createClass({
   getInitialState: function () {
