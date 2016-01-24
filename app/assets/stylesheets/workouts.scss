@@ -1,0 +1,25 @@
+@import './mixins/*';
+
+.workout-form-exercise-index {
+  list-style-type: none;
+  padding: 0;
+  .workout-form-exercise-index-item {
+    padding: 5px;
+    .workout-form-input {
+      display: block;
+      width:   33%;
+      height:  auto;
+      padding: 12px 6px 12px 0px;
+      border:  none;
+      outline: none;
+      border-bottom: 1px solid $ui-color-medium;
+      transition-duration: 300ms;
+      &:focus {
+        border-color: $accent-blue-light;
+      }
+    }
+    .workout-input-group {
+      display: inline-block;
+    }
+  }
+}
