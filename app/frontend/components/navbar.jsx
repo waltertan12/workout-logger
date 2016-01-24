@@ -7,7 +7,7 @@ const Navbar = React.createClass({
         <div className='container'>
           <div className='navbar-header'>
             <a className='navbar-brand' href="/#/dashboard">
-              <img src='/assets/favicon-small.png' alt="You're Weak, Bro..."
+              <img src='/favicon-small.png' alt="You're Weak, Bro..."
                    style={{transform: 'translateY(-5px)'}}/>
             </a>
           </div>
