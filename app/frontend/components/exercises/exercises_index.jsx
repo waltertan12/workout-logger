@@ -19,7 +19,7 @@ const ExercisesIndex = React.createClass({
             </button>
           </span>
         </div>
-        <ul>
+        <ul className='exercises-index'>
           { exercises }
         </ul>
       </div>

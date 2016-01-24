@@ -27,3 +27,18 @@
     }
   }
 }
+
+.exercises-index{
+  .exercises-index-item {
+    padding: 5px;
+    border: 1px solid transparent;
+    &:hover {
+      border-color: $accent-blue-dark;
+      cursor: pointer;
+      transition-duration: 300ms;
+    }
+    &:focus, &:active {
+      background-color: $accent-blue-light;
+    }
+  }
+}
