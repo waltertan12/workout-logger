@@ -9,7 +9,7 @@ const ExercisesIndex = React.createClass({
 
     return (
       <div className='col-md-4 exercise-pane'>
-        <h3>Exercises</h3>
+        <h3><strong>Exercises</strong></h3>
         <div className='exercises-search-group'>
           <input type='text' placeholder='Search for an exercise' 
                  className='exercise-search'/>

@@ -32,14 +32,17 @@
   .exercises-index-item {
     padding: 5px;
     border: 1px solid transparent;
+    transition-duration: 300ms;
     &:hover {
-      border-color: $accent-blue-dark;
+      padding-left: 10px;
+      background-color: $accent-blue-light;
+      color: white;
       cursor: pointer;
       transition-duration: 300ms;
     }
     &:focus, &:active {
       color: white;
-      background-color: $accent-blue-light;
+      background-color: $accent-blue-dark;
     }
   }
 }

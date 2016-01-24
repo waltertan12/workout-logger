@@ -23,9 +23,11 @@ const WorkoutContainer = React.createClass({
 
     return (
       <div className='container'>
-        <div className='row'>
+        <div className='row vdivide'>
           <div className='container'>
-            <h2>Log Your Workout</h2>
+            <h2>
+              <strong>Log Your Weakness</strong>
+            </h2>
           </div>
           <ExercisesIndex exercises={ exercises } />
           <WorkoutForm />

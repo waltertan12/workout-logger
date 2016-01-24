@@ -17,9 +17,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "mixins/*";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-    font-family: consolas, sans-serif;
+    font-family: 'Roboto', consolas, sans-serif;
+    padding-bottom: 30px;
 }
 
 div.center {
@@ -70,4 +72,32 @@ div.center {
     background-color: $accent-red-light;
     border-color: $accent-red-dark;
   }
+}
+
+.button-green {
+  &:hover {
+    color: $ui-color-light;
+    background-color: $accent-green-dark;
+    border-color: $accent-green-light;
+  }
+}
+
+.button-orange {
+  &:hover {
+    color: $ui-color-light;
+    background-color: $accent-orange-dark;
+    border-color: $accent-orange-light;
+  }
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: $ui-color-medium-light;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
 }
