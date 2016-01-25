@@ -7,6 +7,9 @@
   .workout-form-exercise-index-item {
     padding: 30px 0;
     border-bottom: 1px solid $ui-color-medium-light;
+    form {
+      clear: both;
+    }
     .workout-form-header {
       h4 {
         font-weight: bold;
@@ -19,7 +22,7 @@
     } 
     .workout-form-input {
       display: block;
-      width:   25%;
+      width:   50%;
       height:  auto;
       padding: 12px 6px 12px 0px;
       border:  none;
@@ -40,14 +43,22 @@
     }
     .workout-input-group {
       display: inline-block;
+      width: auto;
     }
     .workout-form-input-dropdown {
       background-color: transparent;
       width: auto;
     }
     .workout-set {
-      width: 25%;
+      width: auto;
       display: inline-block;
+      padding-right: 15px;
+      div {
+        display: block;
+        width:   50%;
+        height:  auto;
+        padding: 12px 6px 12px 0px;
+      }
     }
   }
 }
@@ -56,7 +67,6 @@
   margin-top: 15px;
   margin-bottom: 15px;
   padding-botto: 15px;
-  // border-top: 1px solid $ui-color-medium-light;
   border-bottom: 1px solid $ui-color-medium-light;
   .notes-input {
     border: 1px solid $ui-color-medium;

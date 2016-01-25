@@ -7,12 +7,16 @@ const WorkoutForm = React.createClass({
     var exercises = [
       'Clean and Jerk',
       'Split Jerk',
-      'Front Squat'
+      'Front Squat',
+      'Pendlay Row'
     ];
 
     var exercisesItems = exercises.map((e, i) => {
+      var num = Math.floor(Math.random() * 4);
+      if (num === 0) num = 1;
       return (
-        <WorkoutFormExerciseIndexItem exercise={e} key={i} />
+        <WorkoutFormExerciseIndexItem 
+          exercise={e} key={i} sets={ num } />
       );
     });
 
