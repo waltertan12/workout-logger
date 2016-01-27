@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     resources :users, except: [:edit, :new]
   end
 
+  get 'gains' => 'static_pages#gains'
   root 'static_pages#index'
 end
