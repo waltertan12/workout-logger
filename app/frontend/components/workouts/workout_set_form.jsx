@@ -33,13 +33,11 @@ const WorkoutSetForm = React.createClass({
         <div className='workout-input-group' style={{paddingLeft: '15px'}}>
           <button className='button button-green transition workout-set'>
             Copy&nbsp;
-            <span className='glyphicon glyphicon-copy'/>
           </button>
         </div>
         <div className='workout-input-group' style={{paddingLeft: '15px'}}>
           <button className='button button-orange transition workout-set'>
             Delete&nbsp;
-            <span className='glyphicon glyphicon-remove'/>
           </button>
         </div>
         <br/><br/>
